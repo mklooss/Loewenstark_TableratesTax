@@ -1,6 +1,6 @@
 <?php
 
-class Loewenstark_TableratesTax_Helper_Data
+class Loewenstark_TableratesTax_Helper_Tax
 extends Mage_Tax_Helper_Data
 {
     const CONFIG_XML_PATH_PRICE_INCLUDES_TAX = 'tax/calculation/price_includes_tax';
