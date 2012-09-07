@@ -36,7 +36,7 @@ extends Mage_Shipping_Model_Carrier_Tablerate
         // BOF: Added TaxCalc for TableRates, added loe
         if (Mage::helper('tablerates_tax/tax')->priceIncludesTax()) {
             foreach ($request->getAllItems() as $item) {
-                $request->setPackageValue($request->getPackageValue() + $item->getTaxAmount());
+                $request->setPackageValue($request->getPackageValue() + $item->getTaxAmount() + $item->getHiddenTaxAmount() );
             }
         }
         // BOF: Added TaxCalc for TableRates, added loe
