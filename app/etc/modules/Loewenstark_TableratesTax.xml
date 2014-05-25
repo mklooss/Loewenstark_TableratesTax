@@ -3,7 +3,7 @@
     <modules>
         <Loewenstark_TableratesTax>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
             <depends>
                 <Mage_Shipping />
             </depends>
